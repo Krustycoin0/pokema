@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="flex flex-row sm:mt-4">
            <a href="https://github.com/Krustycoin0/pokema" target="_blank"  rel="noopener noreferrer"> <Image src={images.instagram} alt="social" width={40} height={40} alt="social" className={theme === 'light' ? 'filter invert' : undefined} /> </a>
            <a href="https://twitter.com/LSP20Lisprocoin" target="_blank"  rel="noopener noreferrer"> <Image src={images.twitter} alt="social" width={40} height={40} alt="social" className={theme === 'light' ? 'filter invert' : undefined} /> </a>
-           <a href="https://t.me/lisprocoinpresale" target="_blank"  rel="noopener noreferrer"> <Image src={images.discord} alt="social" width={40} height={40} alt="social" className={theme === 'light' ? 'filter invert' : undefined} /> </a>
+           <a href="https://t.me/lisprocoinpresale" target="_blank"  rel="noopener noreferrer"> <Image src={images.telegram} alt="social" width={40} height={40} alt="social" className={theme === 'light' ? 'filter invert' : undefined} /> </a>
           </div>
         </div>
       </div>
