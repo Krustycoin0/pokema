@@ -56,7 +56,7 @@ contract PokemonMarket is ERC721URIStorage {
 
     // set the owner as the msg.sender
     // the owner of the contract is the one deploying it
-    constructor() ERC721("Pokemon Card", "TCG") {
+    constructor() ERC721("Lisprocoin Card", "TCG") {
       owner = payable(msg.sender);
     }
 
