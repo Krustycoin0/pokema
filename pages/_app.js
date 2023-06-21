@@ -12,10 +12,10 @@ const App = ({ Component, pageProps }) => (
     <ThemeProvider attribute="class">
       <div className="dark:bg-nft-dark bg-white min-h-screen">
         <Head>
-          <title>pokemonmarket.com</title>
+          <title>Lisprocoinmarket.com</title>
           <meta
             name="description"
-            content="Pokemon Market NFT where you can buy and sell new NFTs."
+            content="Lisprocoin Market NFT where you can buy and sell new NFTs."
           />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="icon" href="/favicon.ico" />
