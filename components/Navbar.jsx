@@ -24,7 +24,7 @@ const MenuItems = ({ isMobile, active, setActive, setIsOpen }) => {
 
   return (
     <ul className={`list-none flexCenter flex-row ${isMobile && 'flex-col h-full'}`}>
-      {['Explore Pokemon Market NFTs', 'Listed NFTs Pokemon Market', 'My Pokemon NFTs'].map((item, i) => (
+      {['Explore Lisprocoin Market NFTs', 'Listed NFTs Lisprocoin Market', 'My Lisprocoin NFTs'].map((item, i) => (
         <li
           key={i}
           onClick={() => {
@@ -51,7 +51,7 @@ const ButtonGroup = ({ setActive, router }) => {
   return currentAccount ? (
     <div className="flexCenter">
       <Button
-        btnName="Create Pokemon NFT"
+        btnName="Create Lisprcoin NFT"
         btnType="primary"
         classStyles="mx-2 rounded-xl"
         handleClick={() => {
@@ -73,13 +73,13 @@ const ButtonGroup = ({ setActive, router }) => {
 const checkActive = (active, setActive, router) => {
   switch (router.pathname) {
     case '/':
-      if (active !== 'Explore Pokemon Market NFTs') setActive('Explore Pokemon Market NFTs');
+      if (active !== 'Explore Lisprocoin Market NFTs') setActive('Explore Lisprocoin Market NFTs');
       break;
     case '/created-nfts':
-      if (active !== 'Listed NFTs Pokemon Market') setActive('Listed NFTs Pokemon Market');
+      if (active !== 'Listed NFTs Lisprocoin Market') setActive('Listed NFTs Lisprocoin Market');
       break;
     case '/my-nfts':
-      if (active !== 'My Pokemon NFTs') setActive('My Pokemon NFTs');
+      if (active !== 'My Lisprocoin NFTs') setActive('My Lisprocoin NFTs');
       break;
     case '/create-nft':
       if (active !== '') setActive('');
@@ -91,7 +91,7 @@ const checkActive = (active, setActive, router) => {
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
-  const [active, setActive] = useState('Explore Pokemon Market NFTs');
+  const [active, setActive] = useState('Explore Lisprocoin Market NFTs');
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
@@ -116,16 +116,16 @@ const Navbar = () => {
     <nav className="flexBetween w-full fixed z-10 p-4 flex-row border-b dark:bg-nft-dark bg-white dark:border-nft-black-1 border-nft-gray-1">
       <div className="flex flex-1 flex-row justify-start">
         <Link href="/">
-          <div className="flexCenter md:hidden cursor-pointer" onClick={() => setActive('Explore Pokemon Market NFTs')}>
+          <div className="flexCenter md:hidden cursor-pointer" onClick={() => setActive('Explore Lisprocoin Market NFTs')}>
             <Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" />
-            <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Pokemon Market</p>
+            <p className=" dark:text-white text-nft-black-1 font-semibold text-lg ml-1">Lisprocoin Market</p>
           </div>
         </Link>
         <Link href="/">
           <div
             className="hidden md:flex"
             onClick={() => {
-              setActive('Explore Pokemon Market NFTs');
+              setActive('Explore Lisprocoin Market NFTs');
               setIsOpen(false);
             }}
           >
