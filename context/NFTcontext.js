@@ -6,9 +6,9 @@ import { create as ipfsHttpClient } from 'ipfs-http-client';
 
 import { MarketAddress, MarketABI } from './constants';
 
-const infuraProjectId = "d57f136bd5024f4889c74a1d4f7ce760"; //IPFS APIKEY Infura
-const infuraProjectSecret = "d32a1442b2a27ef43813befb66726398"; //IPFS API Key Secret Infura
-const INFURA_API_KEY = "2MImBV304rUBILQy7C3jutagiTf"; //INFURA API KEY Web3API
+const infuraProjectId = "1wa5pecSe62mKU6cpyaAF0Zk4g3"; //IPFS APIKEY Infura
+const infuraProjectSecret = "cb20cef9c98c523764650c9cd7ba379c"; //IPFS API Key Secret Infura
+const INFURA_API_KEY = "1wa5pecSe62mKU6cpyaAF0Zk4g3:cb20cef9c98c523764650c9cd7ba379c"; //INFURA API KEY Web3API
 
 const client = ipfsHttpClient({
   url: 'https://ipfs.infura.io:5001', //IPFS API Endpoint On Infura
